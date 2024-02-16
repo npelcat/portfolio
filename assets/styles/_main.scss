@@ -1,0 +1,125 @@
+main {
+    width: 85%;
+    margin: 0 auto 30px;
+    background: $white1;
+    backdrop-filter: blur(5px);
+    
+    img {
+        width: 100%;
+    }
+
+    .section1, .section0 {
+        width: 80%;
+        margin: 0 auto;
+
+// Pour ajouter before et after : faire attention aux balises inline : les mettre en block pour qu'elles fassent 100%  !
+        span {
+            padding: 70px 0;
+            position: relative;
+            display: block;
+
+            &::before, 
+            &::after {
+                content: "";
+                position: absolute;
+                width: 37%;
+                height: 1px;
+                background: $orange2;
+                top: 50%;
+                transform: translateY(-50%);
+
+                @media screen and (max-width: 700px) {
+                    width: 30%;
+                }
+
+                @media screen and (max-width: 500px) {
+                    width: 24%;
+                }
+            }
+
+            &::before {
+                left: 0;
+            }
+            &::after {
+                right: 0;
+            }
+        }
+
+        .projet {
+            border-top: 1px solid $grey1;
+            padding : 20px;
+        }
+
+        h2 {
+            @include title2;
+            font-size: 2rem;
+            margin: 0 0 20px 0;
+            padding: 60px 0 0 0;
+
+            @media screen and (max-width: 700px){
+                font-size: 1.5rem;
+            }
+        }
+
+        p {
+            width: 90%;
+            margin: 30px auto;
+            line-height: 35px;
+            font-style: italic;
+            font-size: 0.8rem;
+        }
+
+        .btn {
+            margin: 10px 0 10px;
+        }
+    }
+
+    .section2 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        border-top: 1px solid $grey1;
+
+        @media screen and (max-width: 700px){
+            grid-template-columns: 1fr;
+        }
+
+        .left-part, .right-part {
+            padding: 60px;
+
+            h3 {
+                @include title2;
+                margin: 20px 0;
+                line-height: 28px;
+            }
+        }
+
+        .left-part {
+            border-right: 1px solid $grey1;
+        }
+
+        .right-part img {
+            margin: 20px 0 50px 0;
+        }
+
+        .stacks-container, .outils-container, .skill {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+
+        }
+
+        .stack, .outil {
+            max-width: 15%;
+            margin: 10px;
+        }
+
+        .skill i {
+            background-color: $orange;
+            margin: 10px 20px 10px 0;
+            padding: 7px;
+            border-radius: 50px;
+        }
+    }
+}
