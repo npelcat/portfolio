@@ -1,0 +1,24 @@
+body {
+  background-color: antiquewhite;
+}
+
+.page-thanks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 80vh;
+  max-height: 50vh;
+  margin: 0 auto;
+}
+
+.thanks {
+  margin: 200px 30px 0 30px;
+}
+
+.rappel {
+  border: 1px solid rgb(134, 44, 2);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 30px;
+}

@@ -278,13 +278,15 @@
       </section>
     </main>
     <footer id="footer">
-      <form action="https://formspree.io/f/mqkrqdep" method="POST">
+      <form id="contactForm" action="mail.php" method="POST">
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" />
+        <input type="text" id="name" name="name" required />
+
         <label for="email">Email</label>
-        <input type="text" id="email" name="email" />
+        <input type="email" id="email" name="email" required />
+
         <label for="message">Message</label>
-        <textarea id="message" name="message"></textarea>
+        <textarea id="message" name="message" required></textarea>
         <div class="submit-container">
           <input type="submit" class="btn" value="Send message" />
         </div>
