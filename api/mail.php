@@ -16,7 +16,7 @@ $headers = "From: $name <$email>" . "\r\n" .
 // Envoi du courriel
 if (mail('pelcat.nd@gmail.com', $subject, $message, $headers)) {
     // Redirection vers une page de confirmation
-    header("Location: thanks.html");
+    header("Location: /portfolio/thanks.html");
 } else {
     // Gestion des erreurs
     echo "<p>Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer plus tard.</p>";
