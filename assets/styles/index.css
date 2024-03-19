@@ -317,6 +317,12 @@ main .section1 p, main .section0 p {
 main .section1 .btn, main .section0 .btn {
   margin: 10px 0 10px;
 }
+main .section1 .mes-taches, main .section0 .mes-taches {
+  margin: 20px 0;
+  line-height: 35px;
+  font-style: italic;
+  font-size: 0.8rem;
+}
 main .section2 {
   display: grid;
   grid-template-columns: 50% 50%;
