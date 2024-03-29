@@ -1,4 +1,4 @@
-// !! L'intégralité du style de HEADER se trouvera dans la balise header de façon à ne pas impacter le reste des feuilles de style lors de la compilation !
+//L'intégralité du style de HEADER se trouvera dans la balise header de façon à ne pas impacter le reste des feuilles de style lors de la compilation !
 header {
     color: $grey1;
     position: relative;
@@ -118,10 +118,10 @@ header {
         }
 
         .nav-right {
-            font-size: 1.1rem;
+            font-size: 2rem;
         // En faisant min-width et max-width, plus besoin de média queries :
             min-width: 100px;
-            width: 25%;
+            width: 20%;
             max-width: 300px;
             justify-content: space-around;
             margin-right: 10px;

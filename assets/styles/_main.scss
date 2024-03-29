@@ -8,9 +8,27 @@ main {
         width: 100%;
     }
 
+    .who-i-am {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 30px;
+        div {
+            background-color: rgb(241,113,3, 0.2);
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        div i {
+            margin: 20px;
+        }
+    }
+
     .section1, .section0 {
         width: 80%;
         margin: 0 auto;
+
+        
 
 // Pour ajouter before et after : faire attention aux balises inline : les mettre en block pour qu'elles fassent 100%  !
         span {

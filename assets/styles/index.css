@@ -154,7 +154,7 @@ header .header-content p {
   padding: 10px;
 }
 header .header-content .crossed {
-  color: rgba(243, 243, 243, 0.5);
+  color: rgba(243, 243, 243, 0.6);
 }
 header .header-content span {
   border: 2px solid rgb(233, 233, 233);
@@ -222,9 +222,9 @@ header nav .nav-left li:hover {
   color: rgb(17, 17, 17);
 }
 header nav .nav-right {
-  font-size: 1.1rem;
+  font-size: 2rem;
   min-width: 100px;
-  width: 25%;
+  width: 20%;
   max-width: 300px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -248,12 +248,26 @@ header nav .nav-right li:hover {
 main {
   width: 85%;
   margin: 0 auto 30px;
-  background: rgba(243, 243, 243, 0.5);
+  background: rgba(243, 243, 243, 0.6);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
 }
 main img {
   width: 100%;
+}
+main .who-i-am {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 30px;
+}
+main .who-i-am div {
+  background-color: rgba(241, 113, 3, 0.2);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+main .who-i-am div i {
+  margin: 20px;
 }
 main .section1, main .section0 {
   width: 80%;
@@ -375,7 +389,7 @@ main .section2 .skill i {
 }
 
 footer {
-  background: rgba(243, 243, 243, 0.5);
+  background: rgba(243, 243, 243, 0.6);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   min-height: 640px;
