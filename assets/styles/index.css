@@ -148,7 +148,7 @@ header .header-content p {
   margin: 40px auto 40px;
   font-style: italic;
   width: 85%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   max-width: 800px;
   padding: 10px;
@@ -354,7 +354,7 @@ main .section2 .left-part h3, main .section2 .right-part h3 {
   font-family: raleway;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin: 20px 0;
+  margin: 40px 0 20px 0;
   line-height: 28px;
 }
 main .section2 .left-part {
