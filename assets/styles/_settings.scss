@@ -1,104 +1,97 @@
 @font-face {
-    font-family: "raleway";
-    src: url(../fonts/Raleway-VariableFont_wght.ttf)
+  font-family: "raleway";
+  src: url(../fonts/Raleway-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: "exo2";
-    src: url(../fonts/Exo2-VariableFont_wght.ttf);
+  font-family: "exo2";
+  src: url(../fonts/Exo2-VariableFont_wght.ttf);
 }
 
 $font1: exo2;
 $font2: raleway;
 $black1: rgb(17, 17, 17);
-$white1: rgb(243,243,243, 0.6);
-$orange: rgb(241,113,3, 0.2);
-$orange2: rgb(134,44,2);
-$grey1: rgb(233,233,233);
-$grey2: rgb(105,105,105);
+$white1: rgb(243, 243, 243, 0.6);
+$orange: rgb(241, 113, 3, 0.2);
+$orange2: rgb(175, 59, 5);
+$orange3: rgb(108, 3, 3);
+$grey1: rgb(233, 233, 233);
+$grey2: rgb(105, 105, 105);
 
 @mixin title1 {
-    font-family: $font1;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  font-family: $font1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 @mixin title2 {
-    font-family: $font2;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  font-family: $font2;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
-a, a:visited{
-    color: $grey1;
-    text-decoration: none;
-    @include title1;
-    font-size: 0.7rem;
-    text-shadow: 0px 0px 5px $black1, 
-               0px 0px 10px $black1, 
-			   0px 0px 15px $black1,
-			   0px 0px 20px $black1,
-			   0px 0px 30px $black1,
-			   0px 0px 40px $black1,
-			   0px 0px 55px $black1,
-			   0px 0px 75px $black1;
+a,
+a:visited {
+  color: $grey1;
+  text-decoration: none;
+  @include title1;
+  font-size: 0.7rem;
+  text-shadow: 0px 0px 5px $black1, 0px 0px 10px $black1, 0px 0px 15px $black1,
+    0px 0px 20px $black1, 0px 0px 30px $black1, 0px 0px 40px $black1,
+    0px 0px 55px $black1, 0px 0px 75px $black1;
 }
 
 body {
-    background: url(/img/IMG-20240208-WA0000.jpg) fixed center/cover;
-    text-align: center;
-    font-family: $font2;
-    max-width: 1300px;
-    margin: 0 auto;
+  background: url(/img/IMG-20240208-WA0000.jpg) fixed center/cover;
+  text-align: center;
+  font-family: $font2;
+  max-width: 1300px;
+  margin: 0 auto;
 
-    &::before {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        background: $black1;
-        animation: animBefore 1.5s ease forwards;
-        animation-delay: 0.15s;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: $black1;
+    animation: animBefore 1.5s ease forwards;
+    animation-delay: 0.15s;
 
-// KEYFRAMES = Créer l'animation : mettre le nom de l'animation puis ensuite définir ce qu'elle fait entre {}. TO = aller jusqu'à
-// ENSUITE : appeler l'animation dans le before
-// FORWARDS : tu restes dans l'état dans lequel tu as fini l'animation
-// DELAY : l'animation se déclenche après un délai
-        @keyframes animBefore {
-            to {
-                opacity: 0;
-            }
-        }
+    @keyframes animBefore {
+      to {
+        opacity: 0;
+      }
     }
+  }
 }
 
 .btn {
-    background: $orange;
-    border: 2px solid $black1;
-    height: 45px;
-    width: 170px;
-    font-size: 0.75rem;
-    cursor: pointer;
-    @include title1;
-    transition: 0.2s;
+  background: $orange;
+  border: 2px solid $black1;
+  height: 45px;
+  width: 170px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  @include title1;
+  transition: 0.2s;
 
-    &:hover {
-        transform: scale(1.05);
-    }
+  &:hover {
+    transform: scale(1.05);
+  }
 }

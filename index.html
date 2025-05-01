@@ -3,12 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Développeuse fullstack React, Next.js, Python, je crée des applications performantes et accessibles."
+    />
     <title>Portfolio - Nadège Pelcat</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link rel="stylesheet" href="./assets/styles/index.css" />
+    <meta property="og:title" content="Portfolio - Nadège Pelcat" />
+    <meta
+      property="og:description"
+      content="Développeuse fullstack React, Next.js, Python, je crée des applications performantes et accessibles."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
@@ -20,7 +31,8 @@
         <p>
           Junior du code mais senior de la collaboration et du travail d'équipe,
           j'aime construire des (belles) choses, ainsi que résoudre
-          <s class="crossed">tous les</s> des problèmes.
+          <s class="crossed">tous</s> les problèmes (ou du moins, un bon
+          paquet).
           <br />
           <br />
           <i class="fa-solid fa-code"></i>
@@ -30,27 +42,33 @@
           <br />
           Plongée dans le code : février 2023.
         </p>
-        <a href="#main" class="who"
-            ><span
-          >Qui suis-je ? <i class="fa-solid fa-arrow-down"></i></span></a
-          >
+
+        <a href="#main" class="who" title="En savoir plus sur moi"
+          ><span>Qui suis-je ? <i class="fa-solid fa-arrow-down"></i></span
+        ></a>
       </div>
-      <nav>
+      <nav aria-label="Navigation principale">
         <ul class="nav-left">
-          <li><a href="#projects">My Projects</a></li>
-          <li><a href="#skills">My skills & CV</a></li>
+          <li><a href="#projects">Mes projets</a></li>
+          <li><a href="#skills">Mes compétences & CV</a></li>
           <li><a href="#footer">Contact</a></li>
         </ul>
         <ul class="nav-right">
           <li>
             <a
-              href="https://www.linkedin.com/in/nadege-pelcat77"
+              href="https://www.linkedin.com/in/nadege-pelcat"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
               ><i class="fa-brands fa-linkedin-in"></i
             ></a>
           </li>
           <li>
-            <a href="https://github.com/npelcat" target="_blank"
+            <a
+              href="https://github.com/npelcat"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
               ><i class="fa-brands fa-github"></i
             ></a>
           </li>
@@ -59,222 +77,358 @@
     </header>
     <main id="main">
       <section class="section0">
-        <h2>Bonjour <i class="fa-solid fa-cat"></i></h2>
+        <h2 class="bonjour">Bonjour <i class="fa-solid fa-cat"></i></h2>
         <div class="who-i-am">
           <div>
             <i class="fa-solid fa-laptop-code"></i>
-            <br>
-            Après 14 ans passés à jongler entre les services de l'hôpital et les
-            miaulements et autres jappements en tant qu'infirmière vétérinaire,
-            j'ai décidé de
-            <strong>troquer mes seringues contre des lignes de code</strong> et
-            mes pansements pour des maquettes web.  Parce
-            que, avouons-le, les bugs informatiques ne mordent pas, et la
-            satisfaction de voir un site prendre vie n'a pas de prix.
+            <br />
+            Ancienne infirmière vétérinaire pendant 14 ans, j'ai choisi de me
+            réorienter vers le développement web pour donner un nouveau souffle
+            à ma carrière. Aujourd'hui, je conçois et développe des applications
+            web modernes avec la même <strong>rigueur</strong> et la même
+            <strong>implication</strong> que j'apportais aux soins.
           </div>
           <div>
             <i class="fa-solid fa-dog"></i>
-            <br>
-            J'étais <strong>cette personne que l'on appelait à la rescousse </strong>dès
-            qu'un logiciel médical refusait de coopérer ou qu'un collègue
-            paniquait devant un écran rétif. Et devinez quoi ? Ça m'a sauvé la mise
-            plus d'une fois pendant ma reconversion dans le développement, où la
-            <strong>débrouillardise </strong>et la capacité à résoudre des
-            problèmes sont des alliés précieux.
+            <br />
+            Cette reconversion n'est pas un hasard : j'ai toujours été la
+            personne vers qui l'on se tournait lorsqu'un logiciel faisait des
+            siennes. <strong>Curieuse</strong> et débrouillarde, j'ai su
+            transformer cette appétence en compétences concrètes grâce à une
+            formation intensive, suivie d'une année d'alternance chez
+            <strong>EDF Renouvelables</strong>, en tant que développeuse
+            fullstack.
           </div>
           <div>
             <i class="fa-brands fa-react"></i>
-            <br>
-            Mon expérience
-            professionnelle m'a appris
-            <strong>l'art de la communication et du travail en équipe</strong>,
-            l'empathie, la gestion du stress ainsi qu'un sens de l'
-            <strong>organisation</strong> à toute épreuve. Car oui, jongler entre
-            les urgences et les consultations de routine, ça demande autant de
-            <strong>réactivité </strong> et d'<strong>adaptation</strong> que de
-            passer d'un framework à un autre. 
+            <br />
+            Durant mon alternance, j'ai travaillé au sein d'une équipe Agile sur
+            des projets à fort impact, en développant des outils internes avec
+            <strong>React, TypeScript, Next.js</strong> côté frontend, et
+            <strong>Python, Fast API et PostgreSQL</strong> côté backend. J'ai
+            consolidé mes compétences en développement, tout en continuant à
+            cultiver ce qui me définit : l'esprit d'équipe, l'adaptabilité et
+            une grande capacité d'écoute.
           </div>
           <div>
             <i class="fa-solid fa-paw"></i>
-            <br>
-            Armée d'une
-            <strong>solide expérience en résolution de problèmes</strong>, en
-            communication et en gestion du stress, dans cette ère où l'<strong
-              >inclusion </strong
-            >et la <strong>protection de l'environnement </strong>sont
-            primordiales, je m'engage à contribuer à une <strong>tech responsable</strong> et à des
-            projets qui visent un impact positif sur la société.
+            <br />
+            Je poursuis aujourd'hui une voie qui allie technique et sens :
+            contribuer à des projets qui ont un impact positif, que ce soit à
+            travers une <strong>tech responsable</strong>, des enjeux
+            <strong>environnementaux</strong>, ou toute initiative visant à
+            <strong>améliorer le quotidien des personnes</strong>. Je suis
+            convaincue que le code peut être un levier puissant au service de
+            l'humain, et je mets cette conviction au cœur de ma pratique.
           </div>
         </div>
-          <div>
-            Merci de votre attention, et si vous avez des questions, des idées à partager ou simplement envie de discuter, n'hésitez pas à
-            me contacter <a href="#footer">ici</a>. Je ne vous promets pas de
-            pilules contre les bugs, mais je peux garantir une dose de
-            <strong>bonne humeur </strong>et des solutions
-            <strong>créatives </strong>!
-          </div>
+        <div>
+          Merci pour votre visite ! Si vous souhaitez en savoir plus ou échanger
+          autour d'un projet, n'hésitez pas à me contacter
+          <a href="#footer">ici</a>. J'apporte avec moi de la bonne humeur, un
+          esprit créatif et la détermination de quelqu'un qui a trouvé sa voie.
+        </div>
       </section>
       <section class="section1" id="projects">
-        <span><i class="fa-solid fa-list-check"></i></span>
-        <h2>Mes projets pros</h2>
-        <div class="projet">
-          <img
-            src="./img/screenshot-plateforme-meubles.png"
-            alt="Plateforme de meubles"
-          />
-          <h3>Adopte un Meuble</h3>
-          <p>
-            Projet collectif (2 équipes front et back : 2 x 4 personnes) sur 7 jours.
-            <br>
-            <strong>Objectif</strong> :
-            Création d'un site e-commerce from scratch, avec deux équipes Backend et Frontend (switch en milieu de projet). Création d'une API REST pour dialoguer entre les deux groupes. 
-            <div class="mes-taches"><h4>Mes tâches :</h4>
-            <u>Backend</u> : Création des routes sur <strong>Node JS</strong> et <strong>Express</strong>, communication
-            avec la base de données <strong>MySQL</strong> via un <strong>ORM (Sequelize)</strong>. 
-            <br>
-            <u>FrontEnd</u> :
-            Création de la page d'accueil, lien avec le backend via les <strong>fetchs</strong>
-            et création de <strong>filtres</strong> (boutons radio), en React.
+        <div class="section-header">
+          <i class="fa-solid fa-list-check"></i>
+          <h2>Mes projets pros</h2>
+        </div>
+
+        <article class="projet">
+          <div class="projet-content">
+            <div class="projet-image">
+              <img
+                src="./img/edfre.jpg"
+                alt="Interface de l'application Mynsights d'EDF Renouvelables"
+              />
+            </div>
+            <div class="projet-info">
+              <h3>Mynsights - EDF Renouvelables (power solutions)</h3>
+              <div class="projet-period">
+                <strong>EDF Renouvelables</strong> ~ Sept 2024 - Present
+              </div>
+              <p>
+                Développement d'une
+                <strong>application web de data visualisation</strong> pour les
+                parcs éoliens et solaires internationaux, intégrant des flux de
+                données en temps réel et s'intégrant avec des API internes.
+              </p>
+              <div class="skills-container">
+                <div class="skill-category">
+                  <h4>Front-end:</h4>
+                  <p>
+                    Développement d'une
+                    <strong>Single Page Application (SPA)</strong> en
+                    <strong>React-TypeScript</strong> avec
+                    <strong>Redux Toolkit</strong>.
+                    <strong>Storybook</strong> pour la documentation des
+                    composants, <strong>MUI</strong> pour le design system et
+                    <strong>ECharts</strong> pour la visualisation de données.
+                  </p>
+                </div>
+                <div class="skill-category">
+                  <h4>Back-end:</h4>
+                  <p>
+                    Conception et développement d'une
+                    <strong>API RESTful</strong> avec <strong>FastAPI</strong>,
+                    en suivant le standard <strong>OpenAPI</strong>, ORM
+                    <strong>SQLAlchemy</strong>. Gestion des bases de données
+                    <strong>PostgreSQL</strong> et <strong>MySQL</strong>,
+                    déploiement sur <strong>AWS</strong>.
+                  </p>
+                </div>
+                <div class="skill-category">
+                  <h4>Qualité & CI/CD:</h4>
+                  <p>
+                    Écriture de <strong>tests unitaires</strong> (pytest en
+                    back, Jest/React Testing Library en front). Mise en place de
+                    <strong>linting</strong> (ESLint, Pylint). Intégration
+                    continue et suivi des versions avec
+                    <strong>CodeCommit (AWS)</strong>.
+                  </p>
+                </div>
+                <div class="skill-category">
+                  <h4>Méthodologie Agile:</h4>
+                  <p>
+                    Travail en <strong>SCRUM</strong>, sprints de 2 sem., daily
+                    meetings et PI planning trimestriels. Gestion des tâches via
+                    <strong>Jira</strong>, code reviews et pair programming.
+                  </p>
+                </div>
+                <div class="skill-category">
+                  <h4>Collaboration & Environnement:</h4>
+                  <p>
+                    Intégration de l'application avec des API internes dans un
+                    département spécialisé en <strong>data engineering</strong>.
+                    Interaction avec des équipes multidisciplinaires (data
+                    engineers, DevOps, product owners).
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          </p>
-          <button class="btn">
-            <a href="https://vimeo.com/924123048?share=copy" target="_blank"
-              >La vidéo démo</a
-            >
-          </button>
-          <button class="btn">
-            <a
-              href="https://github.com/adatechschool/projet-plateforme-de-vente-de-meubles-adopteunmeuble"
-              target="_blank"
-              >Projet GitHub</a
-            >
-          </button>
+        </article>
+
+        <article class="projet">
+          <div class="projet-content">
+            <div class="projet-image">
+              <img
+                src="./img/screenshot-plateforme-meubles.png"
+                alt="Interface de la plateforme Adopte un Meuble"
+              />
+            </div>
+            <div class="projet-info">
+              <h3>Adopte un Meuble</h3>
+              <div class="projet-description">
+                <p>
+                  Projet collectif (2 équipes front et back: 2 x 4 personnes)
+                  sur 7 jours.
+                </p>
+                <p>
+                  <strong>Objectif:</strong> Création d'un site
+                  <strong>e-commerce from scratch</strong>, avec deux équipes
+                  Backend et Frontend (switch en milieu de projet). Création
+                  d'une <strong>API REST</strong> pour dialoguer entre les deux
+                  groupes.
+                </p>
+              </div>
+
+              <div class="mes-taches">
+                <h4>Mes tâches:</h4>
+                <div class="tasks-detail">
+                  <p>
+                    <strong>Backend:</strong> Création des routes sur
+                    <strong>Node JS</strong> et <strong>Express</strong>,
+                    communication avec la base de données
+                    <strong>MySQL</strong> via un
+                    <strong>ORM (Sequelize)</strong>.
+                  </p>
+                  <p>
+                    <strong>FrontEnd:</strong> Création de la page d'accueil,
+                    lien avec le backend via les <strong>fetchs</strong> et
+                    création de <strong>filtres</strong> (boutons radio), en
+                    <strong>React</strong>.
+                  </p>
+                </div>
+              </div>
+
+              <div class="projet-links">
+                <button class="btn">
+                  <a
+                    href="https://vimeo.com/924123048?share=copy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >La vidéo démo</a
+                  >
+                </button>
+                <button class="btn">
+                  <a
+                    href="https://github.com/adatechschool/projet-plateforme-de-vente-de-meubles-adopteunmeuble"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Projet GitHub</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="section-header">
+          <i class="fa-solid fa-laptop-code"></i>
+          <h2>Mes projets persos</h2>
         </div>
-        <div class="projet">
-          <img src="./img/screen-app-weather.jpg" alt="Application Météo" />
-          <h3>Weather & Activities</h3>
-          <p>
-            Projet collectif (3 personnes) crée en novembre 2023, au début de
-            notre formation, sur 7 jours. 
-            <br>
-            <strong>Objectif</strong> : Data-visualisation. Manipulation d'APIs,
-            visualisation de données et animations en JavaScript.
-          </p>
-          <button class="btn">
-            <a href="https://vimeo.com/908601904?share=copy" target="_blank"
-              >La vidéo démo</a
-            >
-          </button>
-          <button class="btn">
-            <a
-              href="https://github.com/adatechschool/projet-collectif-dataviz-ryo-taous-nadege"
-              target="_blank"
-              >Projet GitHub</a
-            >
-          </button>
-        </div>
-        <h2>Mes projets persos</h2>
-        <div class="projet">
-          <img
-            src="./img/screen-osun.jpg"
-            alt=""
-          />
-          <h3>O'Sun - Voix animale</h3>
-          <p>
-            Projet crée en décembre 2023 - <strong>EN COURS</strong> : <br>
-            Création d'un site vitrine pour une auto-entrepreneuse : propositions de services et formulaire de contact.
-            <br>
-            <strong>Objectif</strong> : Me permettre de gérer un projet de A à Z, du <strong>cahier des charges</strong> jusqu'au retour du client, le déploiement, et dans le futur, <strong>la base de donnée clients</strong> ainsi qu'un système de <strong>réservation de services</strong>. <br> 
-            <strong>Langages utilisés </strong> : HTML & CSS purs, puis refactorisation en <strong>React</strong> ~ <strong>Typescript</strong>, <strong>Next.js</strong> et <strong>Tailwind CSS</strong>.
-          </p>
-          <button class="btn">
-            <a
-              href="https://o-sun-phi.vercel.app/"
-              target="_blank"
-              >Le site</a
-            >
-          </button>
-          <button class="btn">
-            <a
-              href="https://github.com/npelcat/o-sun"
-              target="_blank"
-              >Projet GitHub</a
-            >
-          </button>
-        </div>
-        <div class="projet">
-          <img
-            src="./img/screen-pokedex.jpg"
-            alt=""
-          />
-          <h3>Pokédex</h3>
-          <p>
-            Projet crée en mars 2024 :
-            Refactoring d'un exercice Ada Tech School, intialement en Python.
-            <br>
-            <strong>Objectif</strong> : Continuer mon apprentissage de <strong>React</strong> et du traitement de données, confirmer mon appétence pour le <strong>frontend</strong>.
-          </p>
-          <button class="btn">
-            <a
-              href="https://pokedex-nad-cat.vercel.app/"
-              target="_blank"
-              >Le site</a
-            >
-          </button>
-          <button class="btn">
-            <a
-              href="https://github.com/npelcat/pokedex"
-              target="_blank"
-              >Projet GitHub</a
-            >
-          </button>
-        </div>
-        <div class="projet">
-          <img
-            src="./img/Screenshot 2024-01-27 at 12-01-44 The Resto votre restaurant gastronomique à Rouen cuisine gourmande et moderne produits locaux et bios slow-food.png"
-            alt=""
-          />
-          <h3>The Resto</h3>
-          <p>
-            Projet crée à l'été 2023, pour me familiariser avec le Front-End et
-            la création de site vitrine. (respect du SEO, css grid et
-            animations)
-          </p>
-          <button class="btn">
-            <a
-              href="https://npelcat.github.io/theresto-projectScss/"
-              target="_blank"
-              >Le site</a
-            >
-          </button>
-          <button class="btn">
-            <a
-              href="https://github.com/npelcat/theresto-projectScss"
-              target="_blank"
-              >Projet GitHub</a
-            >
-          </button>
-        </div>
-        <!-- <div class="projet">
-          <img src="./img/christmas.jpg" alt="" />
-          <h3>Christmas atmosphere</h3>
-          <p>
-            Projet créer en décembre 2023, pour me familiariser avec les
-            animations en JavaScript (et me mettre dans l'ambiance de Noël !)
-          </p>
-          <button class="btn">
-            <a
-              href="https://github.com/npelcat/christmasAnimations"
-              target="_blank"
-              >Projet GitHub</a
-            >
-          </button>
-          <button class="btn">
-            <a href="https://christmas-animations.vercel.app/" target="_blank"
-              >Le site</a
-            >
-          </button>
-        </div> -->
+
+        <article class="projet">
+          <div class="projet-content">
+            <div class="projet-image">
+              <img
+                src="./img/screen-osun.jpg"
+                alt="Capture d'écran du site O'Sun - Voix animale"
+              />
+            </div>
+            <div class="projet-info">
+              <h3>O'Sun - Voix animale</h3>
+              <div class="projet-period">
+                <strong>Ada Tech School</strong> ~ Sept 2024 - Présent
+              </div>
+              <p>
+                Projet de soutenance individuel - Développement d'un site web de
+                zéro. Projet débuté en décembre 2023 - <strong>EN COURS</strong>
+              </p>
+              <p>
+                Création d'un site pour une auto-entrepreneuse: propositions de
+                services, réservations de services, gestion des réservations
+                (admin), formulaire de contact.
+              </p>
+              <div class="projet-details">
+                <p>
+                  <strong>Objectif:</strong> Me permettre de gérer un projet de
+                  A à Z, du <strong>cahier des charges</strong> jusqu'aux
+                  aller-retour du client (travail en mode
+                  <strong>AGILE</strong>).
+                </p>
+                <p>
+                  <strong>Tâches:</strong> Élaboration d'un cahier des charges,
+                  recueil des besoins, réalisation de maquettes et collaboration
+                  client, intégration de <strong>CMS (Strapi)</strong> pour la
+                  gestion du contenu client en autonomie, adaptation continue
+                  aux exigences du projet.
+                </p>
+                <p>
+                  <strong>Stack technique:</strong> FullStack
+                  <strong>Next.js</strong>: <strong>TypeScript</strong>,
+                  <strong>TailwindCSS</strong>, serveur <strong>Node</strong>,
+                  base de données <strong>PostGres</strong>, linting
+                  <strong>ESLint</strong>, tests avec <strong>Vitest</strong> et
+                  workflow <strong>GitHub Actions</strong>, déploiement
+                  <strong>Vercel</strong> et
+                  <strong>Supabase</strong> (dockerisation prévue).
+                </p>
+              </div>
+              <div class="projet-links">
+                <button class="btn">
+                  <a
+                    href="https://osun-voixanimale.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Le site</a
+                  >
+                </button>
+                <button class="btn">
+                  <a
+                    href="https://github.com/npelcat/o-sun"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Projet GitHub</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="projet">
+          <div class="projet-content">
+            <div class="projet-image">
+              <img
+                src="./img/screen-pokedex.jpg"
+                alt="Capture d'écran du projet Pokédex"
+              />
+            </div>
+            <div class="projet-info">
+              <h3>Pokédex</h3>
+              <div class="projet-period">Mars 2024</div>
+              <p>
+                Refactoring d'un exercice Ada Tech School, intialement en
+                Python.
+              </p>
+              <p>
+                <strong>Objectif:</strong> Continuer mon apprentissage de
+                <strong>React</strong> et du traitement de données, confirmer
+                mon appétence pour le <strong>frontend</strong>.
+              </p>
+              <div class="projet-links">
+                <button class="btn">
+                  <a
+                    href="https://pokedex-nad-cat.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Le site</a
+                  >
+                </button>
+                <button class="btn">
+                  <a
+                    href="https://github.com/npelcat/pokedex"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Projet GitHub</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="projet">
+          <div class="projet-content">
+            <div class="projet-image">
+              <img
+                src="./img/Screenshot-resto.png"
+                alt="Capture d'écran du site The Resto, restaurant gastronomique à Rouen"
+              />
+            </div>
+            <div class="projet-info">
+              <h3>The Resto</h3>
+              <div class="projet-period">Été 2023</div>
+              <p>
+                Projet créé pour me familiariser avec le
+                <strong>Front-End</strong> et la création de site vitrine
+                (respect du <strong>SEO</strong>, <strong>CSS Grid</strong> et
+                animations).
+              </p>
+              <div class="projet-links">
+                <button class="btn">
+                  <a
+                    href="https://npelcat.github.io/theresto-projectScss/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Le site</a
+                  >
+                </button>
+                <button class="btn">
+                  <a
+                    href="https://github.com/npelcat/theresto-projectScss"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Projet GitHub</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
       </section>
 
       <section class="section2" id="skills">
@@ -282,92 +436,150 @@
           <span><i class="fa-solid fa-toolbox"></i></span>
           <h3>Ma Stack</h3>
           <div class="stacks-container">
-            <div class="stack"><img src="./img/skills/css 3.png" alt="" /></div>
             <div class="stack">
-              <img src="./img/skills/JavaScript-Logo.png" alt="" />
+              <img src="./img/skills/html 5.png" alt="HTML 5" />
             </div>
-            <div class="stack"><img src="./img/skills/tailwindcss_logo_icon_170649.png" alt="" /></div>
-            <div class="stack"><img src="./img/skills/react.png" alt="" /></div>
-            <div class="stack"><img src="./img/skills/sql.png" alt="" /></div>
-            <div class="stack"><img src="./img/skills/node-js.png" alt="" /></div>
-            <div class="stack"><img src="./img/skills/next-js-logo-7929BCD36F-seeklogo.com.png" alt="" /></div>
-            <div class="stack"><img src="./img/skills/php.png" alt="" /></div>
+            <div class="stack">
+              <img src="./img/skills/css 3.png" alt="CSS 3" />
+            </div>
+            <div class="stack">
+              <img src="./img/skills/JavaScript-Logo.png" alt="JavaScript" />
+            </div>
+            <div class="stack">
+              <img
+                src="./img/skills/png-transparent-angularjs-typescript-javascript-vue-js-others-blue-angle-text-thumbnail.png"
+                alt="TypeScript"
+              />
+            </div>
+            <div class="stack">
+              <img
+                src="./img/skills/tailwindcss_logo_icon_170649.png"
+                alt="Tailwind CSS"
+              />
+            </div>
+            <div class="stack">
+              <img src="./img/skills/img.icons8.png" alt="Icon8" />
+            </div>
+            <div class="stack">
+              <img src="./img/skills/react.png" alt="React" />
+            </div>
+            <div class="stack">
+              <img src="./img/skills/redux-toolkit.png" alt="Redux Toolkit" />
+            </div>
+            <div class="stack">
+              <img
+                src="./img/skills/next-js-logo-7929BCD36F-seeklogo.com.png"
+                alt="Next.js"
+              />
+            </div>
+            <div class="stack">
+              <img src="./img/skills/sql.png" alt="SQL" />
+            </div>
+            <div class="stack">
+              <img src="./img/skills/postgresql.png" alt="PostgreSQL" />
+            </div>
+            <div class="stack">
+              <img src="./img/skills/node-js.png" alt="Node.js" />
+            </div>
           </div>
           <h3>Mes outils</h3>
           <div class="outils-container">
             <div class="outil">
-              <img src="./img/skills/vscode.png" alt="" />
+              <img src="./img/skills/vscode.png" alt="Visual Studio Code" />
             </div>
             <div class="outil">
-              <img src="./img/skills/github.png" alt="" />
+              <img src="./img/skills/github.png" alt="GitHub" />
             </div>
             <div class="outil">
-              <img src="./img/skills/figma-logo-0.png" alt="" />
+              <img src="./img/skills/figma-logo-0.png" alt="Figma" />
             </div>
             <div class="outil">
-              <img src="./img/skills/canva-logo-0.png" alt="" />
+              <img src="./img/skills/canva-logo-0.png" alt="Canva" />
             </div>
             <div class="outil">
-              <img src="./img/skills/Notion_app_logo.png" alt="" />
+              <img src="./img/skills/Notion_app_logo.png" alt="Notion" />
             </div>
             <div class="outil">
-              <img src="./img/skills/methode_agile.png" alt="" />
+              <img src="./img/skills/methode_agile.png" alt="Méthode Agile" />
             </div>
             <div class="outil">
-              <img src="./img/skills/uiux.png" alt="" />
+              <img src="./img/skills/uiux.png" alt="UI/UX Design" />
             </div>
           </div>
           <h3>Mes Soft Skills</h3>
           <div class="soft-skills">
             <div class="skill">
               <i class="fa-solid fa-wand-sparkles"></i>
-              <span><strong>Travail d'équipe <br />(SCRUM)</strong></span>
-              <p>Expérience de 14 ans en travail d'équipe, dans des conditions souvent difficiles (urgence, stress)</p>
+              <strong>Travail d'équipe <br />(AGILE)</strong>
+              <p>
+                Expérience de 14 ans en travail d'équipe, dans des conditions
+                souvent difficiles (urgence, stress)
+              </p>
             </div>
             <div class="skill">
               <i class="fa-solid fa-wand-sparkles"></i>
-              <span><strong>Esprit logique</strong></span>
-              <p>Décortiquer le problème, trouver le pourquoi du comment, résoudre, chercher des solutions originales et applicables</p>
+              <strong>Esprit logique</strong>
+              <p>
+                Décortiquer le problème, trouver le pourquoi du comment,
+                résoudre, chercher des solutions originales et applicables
+              </p>
             </div>
             <div class="skill">
               <i class="fa-solid fa-wand-sparkles"></i>
-              <span><strong>Communication</strong></span>
-              <p>Gestion et résolution des conflits avec bienveillance, communication non-violente. </p>
+              <strong>Communication</strong>
+              <p>
+                Gestion et résolution des conflits avec bienveillance,
+                communication non-violente.
+              </p>
             </div>
             <div class="skill">
               <i class="fa-solid fa-wand-sparkles"></i>
-              <span><strong>Créativité (et curiosité !)</strong></span>
-              <p>Façon de penser qui permet d'apporter un nouveau regard, envie de comprendre et de creuser, veille.</p>
+              <strong>Créativité (et curiosité !)</strong>
+              <p>
+                Façon de penser qui permet d'apporter un nouveau regard, envie
+                de comprendre et de creuser, veille.
+              </p>
             </div>
             <div class="skill">
               <i class="fa-solid fa-wand-sparkles"></i>
-              <span><strong>Facilités d'apprentissage</strong></span>
-              <p>Formation continue, envie d'apprendre, intérêt pour la nouveauté.</p>
+              <strong>Facilités d'apprentissage</strong>
+              <p>
+                Formation continue, envie d'apprendre, intérêt pour la
+                nouveauté.
+              </p>
             </div>
             <div class="skill">
               <i class="fa-solid fa-wand-sparkles"></i>
-              <span><strong>Organisation et persévérance</strong></span>
-              <p>Outils organisationnels (notion, todo list, prévisions des tâches) - survie aux montagnes russes de la reconversion !</p>
+              <strong>Organisation et persévérance</strong>
+              <p>
+                Outils organisationnels (notion, todo list, prévisions des
+                tâches) - survie aux montagnes russes de la reconversion !
+              </p>
             </div>
           </div>
         </div>
         <div class="right-part">
           <span><i class="fa-solid fa-cubes-stacked"></i></span>
           <h3>Curriculum<br />Vitae</h3>
-          <img src="./img/screen-cv.jpg" alt="CV-dev-pelcat" />
+          <img
+            src="./img/screen-cv.jpg"
+            alt="Aperçu de mon CV de développeuse fullstack"
+          />
           <button class="btn">
             <a
-              href="./img/cv-fullstack-nophone-pelcat-alternance.pdf"
+              href="./img/CV-devfullstack-PELCAT-2025.pdf"
               target="_blank"
+              rel="noopener noreferrer"
               >CV FRANCAIS</a
             >
           </button>
-          <br>
-          <br>
+          <br />
+          <br />
           <button class="btn">
             <a
-              href="./img/cv-fullstack-english-nophone-pelcat.pdf"
+              href="./img/Resume-fullstackdev-PELCAT-2025.pdf"
               target="_blank"
+              rel="noopener noreferrer"
               >ENGLISH CV</a
             >
           </button>
@@ -377,11 +589,11 @@
     <footer id="footer">
       <form action="https://formspree.io/f/mqkrqdep" method="POST">
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" />
+        <input type="text" id="name" name="name" required />
         <label for="email">Email</label>
-        <input type="text" id="email" name="email" />
+        <input type="email" id="email" name="email" required />
         <label for="message">Message</label>
-        <textarea id="message" name="message"></textarea>
+        <textarea id="message" name="message" required></textarea>
         <div class="submit-container">
           <input type="submit" class="btn" value="Send message" />
         </div>
@@ -389,15 +601,22 @@
       <div class="infos-contact">
         <div>
           <h3>Localisation</h3>
-          <p><br />Région parisienne ~ (77)</p>
+          <p>Région parisienne ~ (77)</p>
         </div>
         <div>
           <h3>Formation</h3>
-          <p><a href="https://adatechschool.fr/">ADA TECH SCHOOL</a></p>
+          <p>
+            <a
+              href="https://adatechschool.fr/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >ADA TECH SCHOOL</a
+            >
+          </p>
         </div>
         <div>
-          <h3>Areas for work</h3>
-          <p>Ile de France - Normandie (27, 76)</p>
+          <h3>Areas</h3>
+          <p>Ile de France - Normandie (27, 76) - France entière (remote)</p>
         </div>
         <div class="social">
           <h3>Social</h3>
@@ -406,11 +625,17 @@
               <a
                 href="https://www.linkedin.com/in/nadege-pelcat77"
                 target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
                 ><i class="fa-brands fa-linkedin-in"></i
               ></a>
             </li>
             <li>
-              <a href="https://github.com/npelcat" target="_blank"
+              <a
+                href="https://github.com/npelcat"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
                 ><i class="fa-brands fa-github"></i
               ></a>
             </li>

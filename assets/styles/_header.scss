@@ -1,143 +1,139 @@
-//L'intégralité du style de HEADER se trouvera dans la balise header de façon à ne pas impacter le reste des feuilles de style lors de la compilation !
 header {
-    color: $grey1;
-    position: relative;
+  color: $grey1;
+  position: relative;
+  min-height: 100vh;
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    
-    .header-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        // Le min-height 100VH centre en milieu de page avec les 4 ordres du dessus
-        min-height: 100vh;
-        // Définir d'où l'animation part dans l'élément qui s'anime : 
-        // Tu pars d'une opacité de 0 pour arriver à 1, de 40 px vers le bas pour arriver à 0.
-        // Puis appeler l'animation dans l'élément, lui donner le temps et l'état final.
-        opacity: 0;
-        transform: translateY(40px);
-        animation: headerAnim 1.5s forwards;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: headerAnim 1.5s forwards;
 
-        @keyframes headerAnim {
-            to {
-            transform: translateY(0);
-            opacity: 1;
-            }
-        }
-
-        h1 {
-            @include title1;
-            font-size: 6rem;
-            letter-spacing: 6px;
-
-            @media screen and (max-width: 700px){
-                font-size: 2rem;
-            }
-        }
-
-        h2 {
-            @include title2;
-            font-size: 2rem;
-            letter-spacing: 6px;
-
-            @media screen and (max-width: 700px){
-                font-size: 2rem;
-            }
-
-        }
-
-        p {
-            margin: 40px auto 40px;
-            font-style: italic;
-            width: 85%;
-            background-color: rgba(0, 0, 0, 0.5);
-            border-radius: 20px;
-            max-width: 800px;
-            padding: 10px;
-        }
-        .crossed {
-            color: $white1;
-        }
-        span {
-            border: 2px solid $grey1;
-            border-radius: 50px;
-            font-size: 1.2rem;
-            padding: 10px;
-            margin-bottom: 30px;
-        }
-    } 
-    
-    nav {
-        display: flex;
-        justify-content: space-between;
-        background: rgba(255, 255, 255, 0.25);
-        color: $grey1;
-        width: 85%;
-        height: 65px;
-        // Z-INDEX : pour mettre en avant un élément, le mettre quand un élément est dans une position absolute, pour le mettre en premier plan par exemple.
-        z-index: 100;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-
-        ul {
-            display: flex;
-            align-items: center;
-        }
-
-        .nav-left {
-// Quand les autres LI sont survolés, celui qui a une couleur particulière ET qui n'est pas survolé : retrouve une couleur classique
-            &:hover li:not(:hover) {
-                background: none;
-                color: $grey1;
-            }
-            li {
-                @include title2;
-                font-size: 0.7rem;
-                padding: 0 15px;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                cursor: pointer;
-
-                @media screen and (max-width: 700px){
-                    font-size: 0.5rem;
-                }
-
-                &:first-child {
-                    background: $orange;
-                    color: $black1;
-                }
-
-                &:hover {
-                    background: $orange;
-                    color: $black1;
-                }
-            }
-        }
-
-        .nav-right {
-            font-size: 2rem;
-        // En faisant min-width et max-width, plus besoin de média queries :
-            min-width: 100px;
-            width: 20%;
-            max-width: 300px;
-            justify-content: space-around;
-            margin-right: 10px;
-
-            @media screen and (max-width: 700px){
-                display: none;
-            }
-        
-            li {
-                transition: 0.15s;
-                cursor: pointer;
-
-                &:hover {
-                    transform: scale(1.5);
-                }
-            }
-        }
+    @keyframes headerAnim {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
+
+    h1 {
+      @include title1;
+      font-size: 6rem;
+      letter-spacing: 6px;
+
+      @media screen and (max-width: 700px) {
+        font-size: 2rem;
+      }
+    }
+
+    h2 {
+      @include title2;
+      font-size: 2rem;
+      letter-spacing: 6px;
+
+      @media screen and (max-width: 700px) {
+        font-size: 2rem;
+      }
+    }
+
+    p {
+      margin: 40px auto 40px;
+      font-style: italic;
+      width: 85%;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 20px;
+      max-width: 800px;
+      padding: 10px;
+    }
+    .crossed {
+      color: $white1;
+    }
+    span {
+      border: 2px solid $grey1;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      padding: 10px;
+      margin-bottom: 30px;
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.25);
+    color: $grey1;
+    width: 85%;
+    height: 65px;
+    z-index: 100;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    ul {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-left {
+      &:hover li:not(:hover) {
+        background: none;
+        color: $grey1;
+      }
+      li {
+        @include title2;
+        font-size: 0.7rem;
+        padding: 0 15px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        @media screen and (max-width: 700px) {
+          font-size: 0.5rem;
+        }
+
+        &:first-child {
+          background: $orange;
+          color: $black1;
+        }
+
+        &:hover {
+          background: $orange;
+          color: $black1;
+        }
+      }
+    }
+
+    .nav-right {
+      font-size: 2rem;
+      min-width: 100px;
+      width: 20%;
+      max-width: 300px;
+      justify-content: space-around;
+      margin-right: 10px;
+
+      @media screen and (max-width: 700px) {
+        display: none;
+      }
+
+      i {
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+      }
+
+      li {
+        transition: 0.15s;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
 }
