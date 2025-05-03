@@ -17,6 +17,7 @@ header {
       @include title1;
       font-size: $font-size-xxl;
       letter-spacing: 6px;
+      color: $color-background-dark;
 
       @include mobile {
         font-size: $font-size-xl;
@@ -34,7 +35,7 @@ header {
     }
 
     p {
-      margin: 40px auto 40px;
+      padding: 40px auto 40px;
       font-style: italic;
       width: 85%;
       background-color: rgba(0, 0, 0, 0.5);

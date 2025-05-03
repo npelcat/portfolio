@@ -13,7 +13,7 @@ main {
   .section-header {
     display: flex;
     align-items: center;
-    margin: 50px 0 30px;
+    padding: 50px 0 30px;
 
     i {
       font-size: $font-size-lg;
@@ -150,6 +150,97 @@ main {
       p {
         margin: 0;
         font-size: $font-size-sm;
+      }
+    }
+  }
+
+  .projet {
+    margin-bottom: 50px;
+
+    .projet-content {
+      display: flex;
+      gap: 30px;
+
+      @include mobile {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+
+    .projet-image {
+      flex: 0 0 40%;
+
+      @include mobile {
+        flex: 0 0 100%;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .projet-info {
+      flex: 1;
+
+      h3 {
+        font-size: $font-size-lg;
+        margin-top: 0;
+        color: $color-tertiary;
+
+        @include mobile {
+          font-size: $font-size-md;
+        }
+      }
+
+      .projet-period {
+        font-size: $font-size-sm;
+        margin-bottom: 15px;
+        color: $color-text;
+
+        strong {
+          color: $color-secondary;
+        }
+      }
+
+      p {
+        margin-bottom: 15px;
+        font-size: $font-size-sm;
+        line-height: 1.6;
+      }
+
+      .skills-container,
+      .projet-details,
+      .mes-taches {
+        margin-top: 20px;
+
+        h4 {
+          font-size: $font-size-sm;
+          color: $color-primary;
+          margin-bottom: 10px;
+        }
+
+        .skill-category {
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    .projet-links {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+
+      @include mobile {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .btn {
+          width: 100%;
+        }
       }
     }
   }

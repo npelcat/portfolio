@@ -423,6 +423,7 @@ header .header-content h1 {
   text-transform: uppercase;
   font-size: 6rem;
   letter-spacing: 6px;
+  color: #1a1a1a;
 }
 @media screen and (max-width: 700px) {
   header .header-content h1 {
@@ -442,7 +443,7 @@ header .header-content h2 {
   }
 }
 header .header-content p {
-  margin: 40px auto 40px;
+  padding: 40px auto 40px;
   font-style: italic;
   width: 85%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -476,7 +477,7 @@ main img {
 main .section-header {
   display: flex;
   align-items: center;
-  margin: 50px 0 30px;
+  padding: 50px 0 30px;
 }
 main .section-header i {
   font-size: 1.5rem;
@@ -605,6 +606,92 @@ main .section2 .skill strong {
 main .section2 .skill p {
   margin: 0;
   font-size: 0.8rem;
+}
+main .projet {
+  margin-bottom: 50px;
+}
+main .projet .projet-content {
+  display: flex;
+  gap: 30px;
+}
+@media screen and (max-width: 700px) {
+  main .projet .projet-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+main .projet .projet-image {
+  flex: 0 0 40%;
+}
+@media screen and (max-width: 700px) {
+  main .projet .projet-image {
+    flex: 0 0 100%;
+  }
+}
+main .projet .projet-image img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+main .projet .projet-info {
+  flex: 1;
+}
+main .projet .projet-info h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: #e6b31e;
+}
+@media screen and (max-width: 700px) {
+  main .projet .projet-info h3 {
+    font-size: 1rem;
+  }
+}
+main .projet .projet-info .projet-period {
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+  color: #333333;
+}
+main .projet .projet-info .projet-period strong {
+  color: #007f5f;
+}
+main .projet .projet-info p {
+  margin-bottom: 15px;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+main .projet .projet-info .skills-container,
+main .projet .projet-info .projet-details,
+main .projet .projet-info .mes-taches {
+  margin-top: 20px;
+}
+main .projet .projet-info .skills-container h4,
+main .projet .projet-info .projet-details h4,
+main .projet .projet-info .mes-taches h4 {
+  font-size: 0.8rem;
+  color: #00a878;
+  margin-bottom: 10px;
+}
+main .projet .projet-info .skills-container .skill-category,
+main .projet .projet-info .projet-details .skill-category,
+main .projet .projet-info .mes-taches .skill-category {
+  margin-bottom: 15px;
+}
+main .projet .projet-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 700px) {
+  main .projet .projet-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  main .projet .projet-links .btn {
+    width: 100%;
+  }
 }
 
 footer {
