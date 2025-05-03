@@ -1,4 +1,14 @@
-@import "./settings";
-@import "./header";
-@import "./main";
-@import "./footer";
+// Settings & Base
+@import "settings";
+@import "base";
+@import "animations";
+
+// Components
+@import "components/buttons";
+@import "components/cards";
+@import "components/navigation";
+
+// Layout
+@import "layout/header";
+@import "layout/main-content";
+@import "layout/footer";

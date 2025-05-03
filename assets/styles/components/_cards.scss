@@ -1,0 +1,121 @@
+.projet {
+  border-top: 1px solid $grey1;
+  padding: 30px 0;
+
+  &:last-child {
+    border-bottom: 1px solid $grey1;
+  }
+
+  .projet-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .projet-image {
+    overflow: hidden;
+    border-radius: 8px;
+
+    img {
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+  }
+
+  .projet-info {
+    text-align: left;
+
+    h3 {
+      font-size: $font-size-lg;
+      margin: 0 0 10px;
+      color: $color-secondary;
+    }
+
+    .projet-period {
+      font-size: $font-size-sm;
+      margin-bottom: 15px;
+      color: $grey1;
+    }
+
+    p {
+      width: 100%;
+      margin: 15px 0;
+      line-height: 1.6;
+      font-style: normal;
+      font-size: $font-size-sm;
+      text-align: justify;
+    }
+  }
+}
+
+.skills-container {
+  margin-top: 20px;
+
+  .skill-category {
+    margin-bottom: 15px;
+
+    h4 {
+      color: $color-background-dark;
+      margin: 10px 0 5px;
+      font-size: $font-size-md;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+  }
+}
+
+.mes-taches {
+  background-color: rgba($color-primary, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+
+  h4 {
+    color: $color-primary;
+    margin: 0 0 10px;
+    font-size: $font-size-md;
+  }
+
+  .tasks-detail {
+    p {
+      margin: 10px 0;
+    }
+  }
+}
+
+.who-i-am {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 30px;
+
+  div {
+    background-color: rgba($color-primary, 0.2);
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  div i {
+    margin: 20px;
+    color: $color-primary;
+    font-size: $font-size-lg;
+  }
+
+  @include tablet {
+    grid-template-columns: 1fr;
+  }
+}

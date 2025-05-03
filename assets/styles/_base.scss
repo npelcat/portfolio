@@ -1,0 +1,86 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: url(/img/pexels-pixabay-33044.jpg) fixed center/cover;
+  text-align: center;
+  font-family: $font2;
+  max-width: 1300px;
+  margin: 0 auto;
+  color: $color-text;
+  line-height: 1.6;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: $color-background-dark;
+    animation: animBefore 1.5s ease forwards;
+    animation-delay: 0.15s;
+  }
+}
+
+a,
+a:visited {
+  color: $color-text-light;
+  text-decoration: none;
+  @include title1;
+  font-size: $font-size-xs;
+  text-shadow: 0px 0px 5px $black1, 0px 0px 10px $black1, 0px 0px 15px $black1,
+    0px 0px 20px $black1, 0px 0px 30px $black1, 0px 0px 40px $black1,
+    0px 0px 55px $black1, 0px 0px 75px $black1;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  @include title1;
+  font-size: $font-size-xxl;
+
+  @include mobile {
+    font-size: $font-size-xl;
+  }
+}
+
+h2 {
+  @include title2;
+  font-size: $font-size-xl;
+
+  @include mobile {
+    font-size: $font-size-lg;
+  }
+}
+
+h3 {
+  @include title1;
+  font-size: $font-size-lg;
+  color: $color-secondary;
+
+  @include mobile {
+    font-size: $font-size-md;
+  }
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+strong {
+  color: $color-tertiary;
+  font-weight: 600;
+}

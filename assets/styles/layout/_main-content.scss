@@ -1,0 +1,156 @@
+main {
+  width: 85%;
+  margin: 0 auto 30px;
+  background: $color-background;
+  backdrop-filter: blur(5px);
+
+  img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    margin: 50px 0 30px;
+
+    i {
+      font-size: $font-size-lg;
+      color: $color-primary;
+      margin-right: 15px;
+    }
+
+    h2 {
+      @include title2;
+      font-size: $font-size-xl;
+      margin: 0;
+      position: relative;
+      padding-bottom: 10px;
+
+      .bonjour {
+        padding-top: 3rem;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 80px;
+        height: 3px;
+        background: $color-secondary;
+      }
+
+      @include mobile {
+        font-size: $font-size-lg;
+      }
+    }
+  }
+
+  .section0,
+  .section1 {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contact-intro {
+    text-align: center;
+    margin: 30px 0;
+
+    p {
+      line-height: 1.6;
+    }
+
+    a {
+      color: $color-primary;
+      font-weight: 600;
+      text-decoration: none;
+      text-shadow: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .section2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-top: 1px solid $grey1;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+
+    .left-part,
+    .right-part {
+      padding: 60px;
+
+      h3 {
+        @include title2;
+        margin: 40px 0 20px 0;
+        line-height: 28px;
+      }
+    }
+
+    .left-part {
+      border-right: 1px solid $grey1;
+    }
+
+    .right-part img {
+      margin: 20px 0 50px 0;
+    }
+
+    .stacks-container,
+    .outils-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+
+      .stack,
+      .outil {
+        max-width: 15%;
+        margin: 10px;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .soft-skills {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .skill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px 0;
+
+      i {
+        background-color: $color-primary;
+        margin: 10px 20px 10px 0;
+        padding: 7px;
+        border-radius: 50px;
+        color: white;
+      }
+
+      strong {
+        margin: 10px 0;
+        color: $color-tertiary;
+      }
+
+      p {
+        margin: 0;
+        font-size: $font-size-sm;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+header {
+  color: $color-text-light;
+  position: relative;
+  min-height: 100vh;
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: headerAnim 1.5s forwards;
+
+    h1 {
+      @include title1;
+      font-size: $font-size-xxl;
+      letter-spacing: 6px;
+
+      @include mobile {
+        font-size: $font-size-xl;
+      }
+    }
+
+    h2 {
+      @include title2;
+      font-size: $font-size-xl;
+      letter-spacing: 6px;
+
+      @include mobile {
+        font-size: $font-size-xl;
+      }
+    }
+
+    p {
+      margin: 40px auto 40px;
+      font-style: italic;
+      width: 85%;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 20px;
+      max-width: 800px;
+      padding: 10px;
+    }
+
+    .crossed {
+      color: $color-background;
+    }
+
+    span {
+      border: 2px solid $color-text-light;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      padding: 10px;
+      margin-bottom: 30px;
+    }
+  }
+}

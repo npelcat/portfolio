@@ -1,5 +1,5 @@
 footer {
-  background: $white1;
+  background: $color-background;
   backdrop-filter: blur(5px);
   min-height: 640px;
   width: 85%;
@@ -7,7 +7,7 @@ footer {
   display: grid;
   grid-template-columns: 50% 50%;
 
-  @media screen and (max-width: 900px) {
+  @include tablet {
     grid-template-columns: 1fr;
   }
 
@@ -20,9 +20,9 @@ footer {
     label {
       display: flex;
       align-items: flex-end;
-      font-size: 0.7rem;
+      font-size: $font-size-xs;
       @include title1;
-      color: $orange2;
+      color: $color-secondary;
     }
 
     input[type="text"],
@@ -33,20 +33,22 @@ footer {
       border-radius: 4px;
       resize: none;
       transition: border-color 0.3s ease;
+      padding: 8px;
 
       &:focus {
         outline: none;
-        border-color: $orange2;
-        box-shadow: 0 0 0 2px rgba($orange2, 0.2);
+        border-color: $color-secondary;
+        box-shadow: 0 0 0 2px rgba($color-secondary, 0.2);
       }
     }
+
     .submit-container {
       display: flex;
       align-items: flex-end;
 
       .btn {
-        color: $orange2;
-        border: 2px solid $orange2;
+        color: $color-background;
+        border: 2px solid $color-secondary;
       }
     }
   }
@@ -57,7 +59,7 @@ footer {
     grid-template-rows: 1fr 1fr 1fr 1fr;
 
     div:nth-child(1) {
-      @media screen and (max-width: 900px) {
+      @include tablet {
         border-top: 1px solid $grey1;
         padding-bottom: 20px;
       }
@@ -69,23 +71,29 @@ footer {
       grid-template-columns: 30% 70%;
       align-items: center;
 
-      @media screen and (max-width: 900px) {
+      @include tablet {
         grid-template-columns: 45% 55%;
       }
 
       h3 {
         @include title1;
-        font-size: 0.7rem;
+        font-size: $font-size-xs;
         padding-left: 40px;
         text-align: left;
-        color: $orange2;
+        color: $color-secondary;
       }
 
       p {
-        font-size: 0.8rem;
+        font-size: $font-size-sm;
         line-height: 26px;
         text-align: left;
-        color: $orange2;
+        color: $color-secondary;
+
+        a {
+          &:hover {
+            color: $color-tertiary;
+          }
+        }
       }
     }
 
@@ -103,6 +111,18 @@ footer {
           display: flex;
           align-items: center;
           justify-content: center;
+          transition: all 0.3s ease;
+
+          &:hover {
+            border-color: $color-primary;
+            background-color: rgba($color-primary, 0.1);
+            transform: translateY(-3px);
+
+            a,
+            i {
+              color: $color-primary;
+            }
+          }
         }
       }
     }
