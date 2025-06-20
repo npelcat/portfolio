@@ -113,7 +113,7 @@ p {
 }
 
 strong {
-  color: #e6b31e;
+  color: #c39304;
   font-weight: 600;
 }
 
@@ -416,6 +416,7 @@ header .header-content {
   opacity: 0;
   transform: translateY(40px);
   animation: headerAnim 1.5s forwards;
+  transition: all 0.3s ease;
 }
 header .header-content h1 {
   font-family: exo2, sans-serif;
@@ -424,6 +425,7 @@ header .header-content h1 {
   font-size: 6rem;
   letter-spacing: 6px;
   color: #1a1a1a;
+  text-shadow: 0 2px 4px rgba(251, 250, 250, 0.7);
 }
 @media screen and (max-width: 700px) {
   header .header-content h1 {
@@ -436,17 +438,19 @@ header .header-content h2 {
   text-transform: uppercase;
   font-size: 2rem;
   letter-spacing: 6px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 @media screen and (max-width: 700px) {
   header .header-content h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 header .header-content p {
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   padding: 40px auto 40px;
-  font-style: italic;
   width: 85%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   max-width: 800px;
   padding: 10px;
@@ -460,6 +464,14 @@ header .header-content span {
   font-size: 1.2rem;
   padding: 10px;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 700px) {
+  header .header-content span {
+    font-size: 0.8rem;
+  }
+}
+header .header-content span:hover {
+  background: rgba(235, 235, 235, 0.831372549);
 }
 
 main {
@@ -601,7 +613,7 @@ main .section2 .skill i {
 }
 main .section2 .skill strong {
   margin: 10px 0;
-  color: #e6b31e;
+  color: #c39304;
 }
 main .section2 .skill p {
   margin: 0;
@@ -642,7 +654,7 @@ main .projet .projet-info {
 main .projet .projet-info h3 {
   font-size: 1.5rem;
   margin-top: 0;
-  color: #e6b31e;
+  color: #c39304;
 }
 @media screen and (max-width: 700px) {
   main .projet .projet-info h3 {
@@ -702,7 +714,7 @@ footer {
   width: 85%;
   margin: 0 auto 70px;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 60%;
 }
 @media screen and (max-width: 900px) {
   footer {
@@ -746,7 +758,7 @@ footer form .submit-container {
   align-items: flex-end;
 }
 footer form .submit-container .btn {
-  color: rgba(248, 248, 248, 0.831372549);
+  color: #1a1a1a;
   border: 2px solid #007f5f;
 }
 footer .infos-contact {
@@ -757,7 +769,6 @@ footer .infos-contact {
 @media screen and (max-width: 900px) {
   footer .infos-contact div:nth-child(1) {
     border-top: 1px solid #eeeeee;
-    padding-bottom: 20px;
   }
 }
 footer .infos-contact div {
@@ -778,6 +789,8 @@ footer .infos-contact div h3 {
   font-size: 0.7rem;
   padding-left: 40px;
   text-align: left;
+  align-items: center;
+  justify-content: center;
   color: #007f5f;
 }
 footer .infos-contact div p {
@@ -785,9 +798,11 @@ footer .infos-contact div p {
   line-height: 26px;
   text-align: left;
   color: #007f5f;
+  margin: 0;
+  padding: 1rem 0;
 }
 footer .infos-contact div p a:hover {
-  color: #e6b31e;
+  color: #333333;
 }
 footer .infos-contact .social ul {
   display: flex;
